@@ -1,0 +1,174 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+body {
+    font-family: sans-serif;
+    font-size: 16px;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(https://static.vecteezy.com/system/resources/previews/008/459/778/original/abstract-dynamic-wavy-lines-neon-color-lighting-elements-on-black-background-technology-digital-futuristic-style-vector.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#main {
+    width: 25%;
+    height: 95vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* background-image: url(https://media.wallpaperchill.com/border-wallpapers/border-amoled-neon-colors-black-wallpaper-s29.jpg); */
+    background-color: #000000da;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 30%;
+    border: 1px solid rgba(96, 96, 96, 0.735);
+
+}
+
+.outer {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.animated-bg {
+    background: linear-gradient(-45deg, #f05d02, #f08d02, #f00265, #0291f0, #02f006, #02f09d);
+    background-size: 400% 400%;
+    animation: gradient 3s ease infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+
+}
+
+.inner {
+    height: 230px;
+    width: 230px;
+    border-radius: 50%;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.text {
+    color: white;
+    font-size: 23px;
+}
+
+.min {
+    font-size: 45px;
+}
+
+.sec {
+    font-size: 37px;
+}
+
+.msec {
+    font-size: 27px;
+}
+
+#buttons {
+    width: 250px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.button {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 2px solid white;
+    background-color: rgba(0, 0, 0, 0.821);
+    color: white;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: rgba(128, 128, 128, 0.468);
+}
+
+.laps {
+    list-style: none;
+    color: white;
+    height: 350px;
+    width: 250px;
+    overflow: auto;
+    position: relative;
+    margin-top: 30px;
+}
+
+.laps::-webkit-scrollbar {
+    display: none;
+}
+
+.laps .lap {
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #696868;
+    border-radius: 50px;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+.laps .num {
+    color: rgb(203, 200, 200);
+}
+
+.laps .time {
+    display: inline-block;
+    margin-left: 25px;
+}
+
+.clear-button {
+    display: block;
+    position: fixed;
+    z-index: 1000;
+    bottom: 30px;
+    left: 50%;
+    transform: translate(-50%);
+    width: 120px;
+    padding: 10px 0;
+    border-radius: 50px;
+    background-color: #ffffff97;
+    border: 1px solid white;
+    cursor: pointer;
+}
+
+.clear-button:hover {
+    background: #7b7a7aad;
+    color: white;
+}
+
+.hidden {
+    visibility: hidden;
+}
